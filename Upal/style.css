@@ -1,0 +1,297 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --navbar-height: 60px;
+    --navbar1-height: 50px;
+    --navbar-spacing: 0px; /* Space between navbars */
+}
+
+body {
+    background: url('./bg3.jpg') no-repeat center center/cover;
+    height: 100vh;
+    width: 100%;
+}
+
+/* Navigation Bar */
+#navbar {
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+}
+
+#logo {
+    margin: 0 20px;
+}
+
+#logo img {
+    height: 55px;
+    margin: 3px 4px;
+}
+
+#navbar ul {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 2rem;
+}
+
+#navbar ul li a:link {
+    display: block;
+    padding: 3px 22px;
+    border-radius: 30px;
+    text-decoration: none;
+    color: white;
+}
+
+#navbar ul li a:hover {
+    background-color: rgb(155, 17, 17);
+    color: black;
+    cursor: pointer;
+}
+
+/* Home Section */
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    top: 50px;
+    align-items: center;
+    height: 750px;
+    position: relative;
+}
+
+#home h1 {
+    color: rgba(26, 94, 126, 0.8);
+    text-align: center;
+}
+
+.homeDet {
+    top: 50px;
+}
+
+#home p {
+    font-size: 25px;
+    background-color:rgba(252, 200, 236,0.4); 
+    color:black;
+}
+
+/* Services */
+#services {
+    margin: 35px;
+    display: flex;
+}
+
+#services .box {
+    border: 2px solid black;
+    width: 500px;
+    padding: 34px;
+    margin: 3px 6px;
+    border-radius: 23px;
+    background-color: rgb(252, 200, 236);
+}
+
+#services .box img {
+    height: 150px;
+    width: 150px;
+    margin: auto;
+    display: block;
+}
+
+/* Utility Classes */
+#home h1 {
+    font-size: 2.5rem;
+    padding: 12px;
+    margin-top: 50px;
+    background-color:rgba(252, 200, 236,0.4); 
+    color:black;
+}
+
+.h-secondary {
+    font-size: 1.5rem;
+    padding: 12px;
+}
+
+.btn {
+    padding: 6px 20px;
+    border: none;
+    background-color: rgb(252, 200, 236);
+    color: rgb(7, 6, 6);
+    margin-top: 90px;
+    border-radius: 23px;
+    cursor: pointer;
+    height: 50px;
+    width: 140px;
+    font-size: 1.25rem;
+}
+
+.btn:hover {
+    background-color: whitesmoke;
+}
+
+.center {
+    text-align: center;
+}
+
+#search {
+    width: 500px;
+    height: 50px;
+    border-radius: 23px;
+    border: none;
+}
+
+#search::placeholder {
+    text-align: center;
+    font-size: 20px;
+}
+
+.btn1 {
+    width: 100px;
+    height: 50px;
+    border-radius: 23px;
+    border: none;
+    background-color: rgb(252, 200, 236);
+    cursor: pointer;
+    font-size: 15px;
+    margin-left: 10px;
+}
+
+.btn1:hover {
+    background-color: white;
+}
+
+input {
+    text-align: center;
+    font-size: 20px;
+    border: none;
+}
+
+/* Second Navigation Bar */
+.ul1 {
+    background: rgba(252, 200, 236,0.8);
+    text-align: center;
+    list-style: none;
+}
+
+.ul1 li {
+    display: inline-block;
+    position: relative;
+    padding: 0px 35px 10px 0px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.ul1 li a {
+    display: block;
+    text-decoration: none;
+    padding: 15px 15px;
+    text-align: center;
+    color: black;
+}
+
+.ul1 li:hover {
+    background-color: white;
+    color: black;
+    border-radius: 23px;
+}
+
+.ul1 li ul.dropdown {
+    width: auto;
+    background: #070707;
+    position: absolute;
+    z-index: 999;
+    display: none;
+    cursor: pointer;
+    color: white;
+    opacity: 0.8;
+}
+
+.ul1 li ul.dropdown li {
+    display: block;
+    background: rgb(7, 7, 7);
+    margin: 2px 0px;
+}
+
+.ul1 li ul.dropdown a {
+    color: white;
+}
+
+.ul1 li ul.dropdown a:hover {
+    cursor: pointer;
+    color: white;
+    background: black;
+    opacity: 0.5;
+}
+
+.ul1 li:hover ul.dropdown {
+    display: block;
+    padding: 0px;
+}
+
+/* Info Section */
+.info {
+    background: rgba(252, 200, 236,0.8);
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.info1,
+.info2 {
+    list-style: none;
+}
+
+.info1 li,
+.info2 li {
+    margin-bottom: 10px;
+}
+
+.info1 li a,
+.info2 li a {
+    font-size: 1.5rem;
+    color: black;
+    text-decoration: none;
+    display: block;
+}
+
+.info1 li a:hover,
+.info2 li a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+	color: white;
+}
+.box:hover{
+	background-color:white;
+}
+.btn3 {
+    color:rgb(5, 3, 3);
+    width: 100px;
+    height:35px;
+    border-radius: 23px;
+    border: none;
+    background-color: rgb(252, 200, 236);
+    cursor: pointer;
+    font-size: 15px;
+    margin-left: 10px;
+    float: right;
+}
+
+#navbar .btn3:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
